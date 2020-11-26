@@ -31,4 +31,5 @@ buttonRef.addEventListener('click', function () {
     if (notAvailable !== 1) {
         console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
     }
+     countryInputRef.value = '';
 });

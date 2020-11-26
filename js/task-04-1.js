@@ -14,4 +14,5 @@ buttonRef.addEventListener('click', function () {
         credits -= totalPrice;
         console.log(`Вы купили ${numberOfDoid} дроидов, на счету осталось ${credits} кредитов.`);
     }
+    numberInputRef.value = '';
 });
