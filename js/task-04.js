@@ -4,7 +4,7 @@ let numberOfDoid = prompt('Какое количество дроидов вы �
 let totalPrice;
 
 if (numberOfDoid === null) {
-    alert('Отменено пользователем!');
+    console.log('Отменено пользователем!');
 } else {
     numberOfDoid = Number(numberOfDoid);
     totalPrice = numberOfDoid * pricePerDroid;

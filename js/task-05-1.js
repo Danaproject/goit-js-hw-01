@@ -1,5 +1,4 @@
 let price;
-let notAvailable;
 
 const countryInputRef = document.querySelector('input[name="country"]');
 const buttonRef = document.querySelector('button[class="send"]');
@@ -26,9 +25,8 @@ buttonRef.addEventListener('click', function () {
             break;
         default:
             alert('В вашей стране доставка не доступна');
-            notAvailable = 1;
     }
-    if (notAvailable !== 1) {
+    if (price) {
         console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
     }
      countryInputRef.value = '';
