@@ -5,7 +5,7 @@ const buttonRef = document.querySelector('button[class="buy"]');
 
 buttonRef.addEventListener('click', function () {
     console.log('количество дроидов:', numberInputRef.value);
-    const numberOfDoid = Number(numberInputRef.value);
+    const numberOfDoid = numberInputRef.value;
     const totalPrice = numberOfDoid * pricePerDroid;
 
     if (totalPrice > credits) {
